@@ -33,14 +33,14 @@
         }
         img {
             border: 3px solid #ddd;
-            border-radius: 4px;
+            border-radius: 50px;
             height: 45%;
             max-width: 100%;
             box-shadow: 6px 6px 6px  rgb(247, 137, 34);
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 250px;
+            width: 300px;
             text-align: center;
             padding: 25px;
             object-position: 70%;
@@ -58,7 +58,7 @@
             border:1px rgb(248, 245, 245);
             background-color:  rgb(247, 137, 34);
             margin: 25px;
-            padding: 25px;
+            padding: 16px;
             box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
         }
         .btn{
@@ -96,6 +96,29 @@
         h3{
             color: white;
             padding: 32px;
+            font-size: 28px;
+        }
+        .picture {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .image1 {
+            height: 100%;
+            padding: 24px;
+        }
+        .holder {
+            height: 32px;
+        }
+        h2{
+            color: white;
+        }
+        .holder{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .bina{
+            padding: 200px;
+            height: 10px;
         }
     </style>
 </head>
@@ -104,8 +127,17 @@
     <h1>Bina Totes</h1>
     <h4> <i>Fashion Bags</i> </h4>
     </header>
-    <h3>Bina Totes is at the intersection between making you look good in every situation and comfortable in your steps. It helps you in packaging various materials into its small space and still maintains its great shape afterwards &#9786. <br> Carry a Bina totes bag today and feel comfortable in your own skin and around your environment &#9728.</h3>
-    <img id="black" src="./black tote.jpg" alt="a tote bag"> <img id="white" src="designed tote.jpg" alt="another tote bag">
+    <section>
+        <div class="picture">
+            <div>
+                <h3>Bina Totes is at the intersection between making you look good in every situation and comfortable in your steps. It helps you in packaging various materials into its small space and still maintains its great shape afterwards &#9786. <br> Carry a Bina totes bag today and feel comfortable in your own skin and around your environment &#9728.</h3>
+            </div>
+            <div class="image1">
+                <img id="black" src="./black tote.jpg" alt="a tote bag">
+            </div>
+        </div>
+    </section>
+        
     <h2>OUR SERVICES://</h2> <br> <br>
     <section class="container">
         <article class="card">
@@ -121,9 +153,6 @@
             <button>Customise here</button>
         </article>
     </section>
-    <div class="holder">
-        <img src="./white tote.jpg" alt="a woman with a tote bag">
-    </div>
     <section>
         <h2>ORDER NOW:</h2>
         <form>
@@ -169,7 +198,17 @@
             <br>
         <div id="my-order"></div>
         </form>
+    </section> 
+<br> <br>
+    <section class="holder">
+        <div>
+            <img src="./white tote.jpg" alt="a woman with a tote bag">
+        </div>
+        <div>
+            <img id="white" src="designed tote.jpg" alt="another tote bag">
+        </div>
     </section>
+<br> <br>
     <script>
         function placeOrder () {
             var orderForm = document.getElementById("my-form");
@@ -179,7 +218,8 @@
             orderResults.innerHTML =results;
         }
     </script>
-    <div>
+<br> <br>
+    <div class="bina">
         <h3>Thank you for choosing Bina Totes bag today &#10084.</h3>
         <div class="container">
             <article class="card"> <h2>For more Enquiries</h2>
